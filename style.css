@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.free-ship
+{
+    background-color: #C52727;
+    color:  white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.hero-section
+{
+    background-image: url('img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a
+{
+    color: #868C90;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar button
+{
+    background-color: #5EA666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.nav-icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-mini
+{
+    display: none;
+}
+
+.hero-content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content h1
+{
+    font-size: 50px;
+    color: black;
+    font-weight: bolder;
+}
+
+.hero-content button
+{
+    background-color: transparent;
+    color: #C52727;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #C52727;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-content ul li
+{
+    list-style: inside url('img/List-disc.png');
+    font-size: larger;
+}
+
+.hero-text
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.list-items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: right;
+}
+
+.list-items p
+{
+    padding: 20px;
+}
+
+@media screen and (max-width: 920px)
+{
+    .navbar
+    {
+        display: none;
+    }
+
+    .navbar-mini
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero-content
+    {
+        flex-direction: column;
+    }
+
+    .hero-image
+    {
+        width: 50%;
+    }
+
+    .hero-buttons
+    {
+        flex-direction: column;
+    }
+
+    .list-section hr
+    {
+        display: none;
+    }
+
+    .list-section-pic
+    {
+        display: none;
+    }
+
+    .list-content
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-items
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
