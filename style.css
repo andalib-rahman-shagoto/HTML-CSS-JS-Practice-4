@@ -73,6 +73,62 @@ body
     display: none;
 }
 
+.nav-mini-dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.mini-button
+{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav-mini-button-active
+{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.mini-links
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+}
+
+.mini-links-active
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-links a
+{
+    color: #868C90;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.mini-links a:hover
+{
+    background-color: #f1f1f1;
+}
+
+.mini-links button
+{
+    background-color: #5EA666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 .hero-content
 {
     display: flex;
