@@ -207,6 +207,64 @@ body
     padding: 20px;
 }
 
+.shop-iron-section
+{
+    background-color: #FBF9FA;
+    color: #C52727;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shop-head
+{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+}
+
+.iron-packet
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iron-packet h1
+{
+    font-size: 25px;
+}
+
+.iron-packet ul
+{
+    list-style-position: inside;
+}
+
+.iron-packet p
+{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.iron-packet button
+{
+    background-color: transparent;
+    color: #C52727;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #C52727;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 920px)
 {
     .navbar
@@ -261,5 +319,16 @@ body
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .iron-packet
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .iron-packet h1, .iron-packet ul
+    {
+        text-align: left;
     }
 }
