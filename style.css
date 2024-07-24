@@ -265,6 +265,80 @@ body
     cursor: pointer;
 }
 
+.marquee-section
+{
+    background-color: #C52727;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    user-select: none;
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+}
+
+.marquee-section ul
+{
+    list-style: none;
+    
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+  
+    animation: scroll 20s linear infinite;
+}
+
+.why-works-section
+{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+}
+
+.why-work-content
+{
+    width: 50%;
+}
+
+.why-work-content p
+{
+    padding: 20px;
+}
+
+.why-works-section p
+{
+    font-size: 28px;
+}
+.why-works-section span
+{
+    color: #C52727;
+}
+
+.why-work
+{
+    border: 1px solid #C52727;
+    border-radius: 16px;
+    padding: 30px;
+    gap: 10px;
+}
+
+.why-work h1
+{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+@keyframes scroll 
+{
+    to 
+    {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
 @media screen and (max-width: 920px)
 {
     .navbar
@@ -330,5 +404,15 @@ body
     .iron-packet h1, .iron-packet ul
     {
         text-align: left;
+    }
+
+    .why-works-section
+    {
+        flex-direction: column;
+    }
+
+    .why-work-content
+    {
+        width: 100%;
     }
 }
