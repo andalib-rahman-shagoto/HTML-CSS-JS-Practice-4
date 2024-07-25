@@ -296,6 +296,7 @@ body
     display: flex;
     flex-direction: row;
     font-weight: 500;
+    padding: 30px;
 }
 
 .why-work-content
@@ -404,6 +405,12 @@ body
     .iron-packet h1, .iron-packet ul
     {
         text-align: left;
+    }
+
+    .iron-packet div
+    {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .why-works-section
