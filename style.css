@@ -270,25 +270,23 @@ body
     background-color: #C52727;
     color: white;
     font-weight: bold;
-    overflow: hidden;
-    user-select: none;
-
-    --gap: 20px;
-    display: flex;
-    gap: var(--gap);
 }
 
-.marquee-section ul
+.marquee-section marquee
 {
-    list-style: none;
-    
-    min-width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+}
+
+.marquee-section span
+{
+    display: inline-flex;
     align-items: center;
-    gap: var(--gap);
-  
-    animation: scroll 20s linear infinite;
+}
+
+.marquee-section p
+{
+    padding: 5px;
 }
 
 .why-works-section
@@ -306,7 +304,8 @@ body
 
 .why-work-content p
 {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .why-works-section p
@@ -324,6 +323,7 @@ body
     border-radius: 16px;
     padding: 30px;
     gap: 10px;
+    text-align: left;
 }
 
 .why-work h1
@@ -332,12 +332,85 @@ body
     font-weight: 600;
 }
 
-@keyframes scroll 
+.doc-quote-section
 {
-    to 
-    {
-      transform: translateX(calc(-100% - var(--gap)));
-    }
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 51px 116px;
+}
+
+.doc-quotes
+{
+    width: 50%;
+    margin: 20px;
+}
+
+.doc-quotes h1
+{
+    font-size: 35px;
+    font-weight: 600;
+    color: #3C3D42;
+    line-height: 30px;
+}
+
+.doc-quotes h2
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3C3D42;
+    line-height: 30px;
+}
+
+.doc-quotes h3
+{
+    font-size: 16px;
+    font-weight: 300;
+    color: #3C3D42;
+    line-height: 30px;
+}
+
+.doc-quotes p
+{
+    padding-top: 30px;
+}
+
+.doc-pic-select
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.doc-pic-select img
+{
+    cursor: pointer;
+}
+
+.doc-dot-part
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.doc-dot
+{
+    background-color: #C4C4C4;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.doc-dot-active
+{
+    background-color: #636363;
 }
 
 @media screen and (max-width: 920px)
@@ -413,12 +486,42 @@ body
         padding-right: 20px;
     }
 
+    .iron-packet img
+    {
+        width: 100%;
+    }
+
     .why-works-section
     {
         flex-direction: column;
     }
 
     .why-work-content
+    {
+        width: 100%;
+    }
+
+    .doc-quote-section
+    {
+        padding: 20px;
+    }
+
+    .doc-quotes
+    {
+        width: 100%;
+    }
+
+    .doc-quote-section
+    {
+        flex-direction: column;
+    }
+
+    .doc-pics img
+    {
+        width: 100%;
+    }
+
+    .doc-pic-select
     {
         width: 100%;
     }
