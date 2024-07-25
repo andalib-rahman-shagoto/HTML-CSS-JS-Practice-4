@@ -332,6 +332,11 @@ body
     font-weight: 600;
 }
 
+.why-works-section img
+{
+    padding: 30px;
+}
+
 .doc-quote-section
 {
     background-color: #f7f7f7;
