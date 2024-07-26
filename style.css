@@ -382,11 +382,18 @@ body
     padding-top: 30px;
 }
 
+.doc-pics
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .doc-pic-select
 {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .doc-pic-select img
@@ -521,13 +528,13 @@ body
         flex-direction: column;
     }
 
-    .doc-pics img
+    .doc-large img
     {
         width: 100%;
     }
 
-    .doc-pic-select
+    .doc-pic-select img
     {
-        width: 100%;
+        width: 25%;
     }
 }
