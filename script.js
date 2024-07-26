@@ -9,6 +9,11 @@ $('document').ready(function() {
         $('#doc-dot2').removeClass('doc-dot-active');
         $('#doc-dot3').removeClass('doc-dot-active');
         $('#doc-dot4').removeClass('doc-dot-active');
+
+        $('#doc-pic1').toggleClass('doc-pic-active');
+        $('#doc-pic2').removeClass('doc-pic-active');
+        $('#doc-pic3').removeClass('doc-pic-active');
+        $('#doc-pic4').removeClass('doc-pic-active');
     });
 
     $('#doc-dot2').click(function(){
@@ -16,6 +21,11 @@ $('document').ready(function() {
         $('#doc-dot1').removeClass('doc-dot-active');
         $('#doc-dot3').removeClass('doc-dot-active');
         $('#doc-dot4').removeClass('doc-dot-active');
+
+        $('#doc-pic2').toggleClass('doc-pic-active');
+        $('#doc-pic1').removeClass('doc-pic-active');
+        $('#doc-pic3').removeClass('doc-pic-active');
+        $('#doc-pic4').removeClass('doc-pic-active');
     });
 
     $('#doc-dot3').click(function(){
@@ -23,6 +33,11 @@ $('document').ready(function() {
         $('#doc-dot1').removeClass('doc-dot-active');
         $('#doc-dot2').removeClass('doc-dot-active');
         $('#doc-dot4').removeClass('doc-dot-active');
+
+        $('#doc-pic3').toggleClass('doc-pic-active');
+        $('#doc-pic1').removeClass('doc-pic-active');
+        $('#doc-pic2').removeClass('doc-pic-active');
+        $('#doc-pic4').removeClass('doc-pic-active');
     });
 
     $('#doc-dot4').click(function(){
@@ -30,5 +45,10 @@ $('document').ready(function() {
         $('#doc-dot1').removeClass('doc-dot-active');
         $('#doc-dot2').removeClass('doc-dot-active');
         $('#doc-dot3').removeClass('doc-dot-active');
+
+        $('#doc-pic4').toggleClass('doc-pic-active');
+        $('#doc-pic1').removeClass('doc-pic-active');
+        $('#doc-pic2').removeClass('doc-pic-active');
+        $('#doc-pic3').removeClass('doc-pic-active');
     });
 });

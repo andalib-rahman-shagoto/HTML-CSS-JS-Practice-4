@@ -396,6 +396,16 @@ body
     align-items: center;
 }
 
+.doc-pic
+{
+    opacity: 0.5;
+}
+
+.doc-pic-active
+{
+    opacity: 1;
+}
+
 .doc-pic-select img
 {
     cursor: pointer;
