@@ -308,6 +308,8 @@ body
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 500;
     padding: 30px;
 }
@@ -454,11 +456,18 @@ body
 }
 
 
+/******************* Mega Section **********************/
+
+.mega-section
+{
+    background-image: linear-gradient(0deg, #FFFFFF, #F3F3F3);
+}
+
 /******************* Absorption Section ********************/
 
 .absorption-section
 {
-    background-image: linear-gradient(180deg, #FFFFFF, #F3F3F3);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -526,6 +535,114 @@ body
 }
 
 
+/****************** Knowledge Section ******************/
+
+
+.knowledge-section h1, .knowledge-section p
+{
+    text-align: center;
+    color: #3C3D42;
+    line-height: 67.2px;
+    font-weight: 500;
+}
+
+.knowledge-section h1
+{
+    padding-top: 30px;
+    font-size: 42px;
+}
+
+.knowledge-section p
+{
+    font-size: 20px;
+}
+
+.knowledge-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.knowledge-head div
+{
+    padding: 20px;
+}
+
+.knowledge-head h1
+{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 67.2px;
+    text-align: left;
+}
+
+.knowledge-head p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+}
+
+.knowledge-section a
+{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 67.2px;
+    color: #C52727;
+}
+
+/*************** Instagram Section *******************/
+
+.instagram-section
+{
+    padding: 40px;
+}
+
+.ig-pics
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.ig-pics img
+{
+    width: 100%;
+}
+
+.instagram-section a
+{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 67.2px;
+    color: #C52727;
+}
+
+.instagram-section p
+{
+    text-align: center;
+}
+
+
+/******************* Contact Section *******************/
+
+
+/******************* Footer Section *******************/
+
+.footer-section
+{
+    background-color: #3C3D42;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 56px;
+}
+
 /********************** Media Screen **********************/
 
 @media screen and (max-width: 920px)
@@ -538,7 +655,7 @@ body
     .navbar-mini
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 20px;
     }
@@ -660,5 +777,15 @@ body
     {
         display: block;
         margin-top: 40px;
+    }
+
+    .knowledge-head
+    {
+        flex-direction: column;
+    }
+
+    .ig-pics
+    {
+        grid-template-columns: auto auto;
     }
 }
