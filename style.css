@@ -12,6 +12,9 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
+
+/******** Free Ship Section **********/
+
 .free-ship
 {
     background-color: #C52727;
@@ -21,6 +24,8 @@ body
     font-weight: bolder;
     width: 100%;
 }
+
+/*********** Hero Section ***************/
 
 .hero-section
 {
@@ -177,6 +182,9 @@ body
     align-items: center;
 }
 
+
+/************ List Section **************/
+
 .list-section
 {
     display: flex;
@@ -206,6 +214,9 @@ body
 {
     padding: 20px;
 }
+
+
+/************** Shop Iron Section **************/
 
 .shop-iron-section
 {
@@ -265,6 +276,8 @@ body
     cursor: pointer;
 }
 
+/***************** Marquee Section ********************/
+
 .marquee-section
 {
     background-color: #C52727;
@@ -288,6 +301,8 @@ body
 {
     padding: 5px;
 }
+
+/************** Why Works Section **************/
 
 .why-works-section
 {
@@ -336,6 +351,9 @@ body
 {
     padding: 30px;
 }
+
+
+/***************** Doc Quote Section *******************/
 
 .doc-quote-section
 {
@@ -434,6 +452,81 @@ body
 {
     background-color: #636363;
 }
+
+
+/******************* Absorption Section ********************/
+
+.absorption-section
+{
+    background-image: linear-gradient(180deg, #FFFFFF, #F3F3F3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.black-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.black-text h1
+{
+    font-size: 35px;
+    font-weight: 500;
+    color: #3C3D42;
+}
+
+.stat-text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #C52727;
+    width: 60%;
+}
+
+.stat-text h1
+{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 128.17px;
+    letter-spacing: 0.5px;
+}
+
+.stat-text p
+{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.ss-learn-more button
+{
+    display: none;
+}
+
+.absorption-button
+{
+    color: #C52727;
+    padding: 10px;
+    border: 2px solid #C52727;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    width: 150px;
+    height: 38px;
+    cursor: pointer;
+}
+
+
+/********************** Media Screen **********************/
 
 @media screen and (max-width: 920px)
 {
@@ -546,5 +639,26 @@ body
     .doc-pic-select img
     {
         width: 25%;
+    }
+
+    .absorption-section, .stat-text
+    {
+        flex-direction: column;
+    }
+
+    .stat-text
+    {
+        width: 50%;
+    }
+
+    .black-text button
+    {
+        display: none;
+    }
+
+    .ss-learn-more button
+    {
+        display: block;
+        margin-top: 40px;
     }
 }
